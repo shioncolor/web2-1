@@ -1,4 +1,4 @@
-<!DOCTPE html>
+<!DOCTYPE html>
 <html>
 <head>
   <meta charset="UTF-8">
@@ -6,11 +6,16 @@
   <script type="text/javascript" src="https://code.jqery.com/jquery-3.2.1.min.js"></script>
   <script type="text/javascript">
   $(function(){
-  $("p").css("color","red")
+    $("p").css("color","red")
+      $("#oggle").on("click",function(){
+        $("#target").fadeToggle("slow")
+      });
   });
   </script>
   </head>
   <body>
   <p>tet</p>
+    <div id="target">表示・非表示される要素</div>
+    <button id="toggle">切り替え</button>
   </body>
   </html>
