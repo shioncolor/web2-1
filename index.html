@@ -9,6 +9,9 @@
     $("p").css("color","red");
       $("#toggle").on("click",function(){
         $("#target").fadeToggle("slow")
+          $(document.body).click(function () {
+           $("div:hidden:first").fadeIn("slow");
+          });
       });
   });
   </script>
@@ -17,5 +20,9 @@
   <p>tet</p>
     <div id="target">表示・非表示される要素</div>
     <button id="toggle">切り替え</button>
+    <span>Click here...</span>
+    <div id="one"></div>
+    <div id="two"></div>
+    <div id="three"></div>
   </body>
   </html>
