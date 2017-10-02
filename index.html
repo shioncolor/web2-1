@@ -10,6 +10,11 @@
            $("div:hidden:first").fadeIn("slow");
       });
   });
+  $(function(){
+          $("#toggle").on("click",function() {
+           $("#target").adeTOggle("slow");
+      });
+  });
   </script>
    <style>
   span { color:red; cursor:pointer; }
@@ -26,5 +31,8 @@
     <div id="one"></div>
     <div id="two"></div>
     <div id="three"></div>
+    
+    <div id="target">表示・非表示</div>
+    <button id="toggle">切り替え</button>
   </body>
   </html>
